@@ -903,6 +903,184 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Sensor_Humidity:ENS210"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ENS210"
+				(at -7.62 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:AMS_QFN-4-1EP_2x2mm_P0.95mm_EP0.7x1.6mm"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://ams.com/eng/Products/Environmental-Sensors/Relative-Humidity-and-Temperature-Sensors/ENS210"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Relative Humidity and Temperature Sensor with I2C Interface"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "relative humidity temperature i2c pre-calibrated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "AMS?QFN*EP*2x2mm*P0.95mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ENS210_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ENS210_1_1"
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 170.18 78.74)
@@ -911,20 +1089,32 @@
 		(uuid "06964537-e203-4e12-80a6-a783ebc00152")
 	)
 	(junction
+		(at 168.91 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20bb02b3-c5ee-43e0-918c-85940fa4a2d7")
+	)
+	(junction
 		(at 143.51 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6a07a1e4-1033-4c25-9bcc-29bdbfc1c0b7")
+		(uuid "c12576b1-fcb9-47ec-a8b9-6412b92ac504")
+	)
+	(junction
+		(at 142.24 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e69502f3-90ff-4a88-9d45-bb6edbd94226")
 	)
 	(wire
 		(pts
-			(xy 170.18 78.74) (xy 170.18 104.14)
+			(xy 143.51 97.79) (xy 168.91 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0358a933-433c-43d0-a012-dea16f1a3449")
+		(uuid "0849f3cc-0c20-4ad9-9d2e-295fe7749db8")
 	)
 	(wire
 		(pts
@@ -938,6 +1128,36 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 99.06) (xy 143.51 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ebdb42b-e4a2-45a7-87c2-f1ce0b6dab2e")
+	)
+	(wire
+		(pts
+			(xy 133.35 111.76) (xy 133.35 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "208c4a22-b0a3-40f6-ac7f-ba8e87e54f32")
+	)
+	(wire
+		(pts
+			(xy 168.91 78.74) (xy 170.18 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22fed8b3-8f5b-469e-8d1a-0680b22beeb1")
+	)
+	(wire
+		(pts
 			(xy 151.13 69.85) (xy 151.13 67.31)
 		)
 		(stroke
@@ -945,6 +1165,26 @@
 			(type default)
 		)
 		(uuid "28d9479c-5ec6-49d2-a82d-bb80d6b6085a")
+	)
+	(wire
+		(pts
+			(xy 135.89 109.22) (xy 135.89 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d1dd635-61d1-4567-ae1b-07fcbfac9ee6")
+	)
+	(wire
+		(pts
+			(xy 170.18 78.74) (xy 184.15 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "388a2600-fd3e-40a5-a052-5e4c4433b8c0")
 	)
 	(wire
 		(pts
@@ -958,13 +1198,33 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 78.74) (xy 184.15 78.74)
+			(xy 127 111.76) (xy 133.35 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "40792796-af00-4d98-89ea-c4e2bcfe1f03")
+		(uuid "3f9892d6-456c-46ee-877b-eb063d786e74")
+	)
+	(wire
+		(pts
+			(xy 140.97 96.52) (xy 140.97 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42159102-b233-4433-90f3-fb4123e88048")
+	)
+	(wire
+		(pts
+			(xy 168.91 97.79) (xy 168.91 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44ce9bf2-b45f-4dae-a272-f6de0dc629d2")
 	)
 	(wire
 		(pts
@@ -988,16 +1248,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 69.85) (xy 143.51 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5510e678-5f17-414e-acd4-1ae7b04a1abd")
-	)
-	(wire
-		(pts
 			(xy 81.28 54.61) (xy 81.28 88.9)
 		)
 		(stroke
@@ -1005,6 +1255,26 @@
 			(type default)
 		)
 		(uuid "57bd6320-68c4-4f9a-bfd0-9015a82c94fc")
+	)
+	(wire
+		(pts
+			(xy 135.89 116.84) (xy 127 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b53d690-73e3-4ceb-b1d8-e48a1da36e83")
+	)
+	(wire
+		(pts
+			(xy 133.35 92.71) (xy 129.54 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e467827-df89-4f90-b051-56035f1fee52")
 	)
 	(wire
 		(pts
@@ -1018,23 +1288,23 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 96.52) (xy 135.89 99.06)
+			(xy 168.91 97.79) (xy 168.91 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b682c65-d4fd-4a0b-b70e-8bfa1aa4a9b2")
+		(uuid "6d2cd92a-eb51-4cc6-a0cf-3be06cc3a6e8")
 	)
 	(wire
 		(pts
-			(xy 143.51 104.14) (xy 170.18 104.14)
+			(xy 143.51 116.84) (xy 168.91 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "80d6cf05-3b60-4c91-a77e-c7102bf08ca4")
+		(uuid "7079ccf8-2ac3-4fc9-ac8e-2f6965a70f00")
 	)
 	(wire
 		(pts
@@ -1058,7 +1328,47 @@
 	)
 	(wire
 		(pts
-			(xy 127 78.74) (xy 143.51 78.74)
+			(xy 143.51 69.85) (xy 143.51 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f81868-edc9-43b6-afa5-8cafae690177")
+	)
+	(wire
+		(pts
+			(xy 143.51 82.55) (xy 143.51 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ba2c01-f881-41d8-a1c1-fed71db49cf4")
+	)
+	(wire
+		(pts
+			(xy 142.24 99.06) (xy 142.24 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a41c8d11-7a89-4416-af37-1dc6900f69a4")
+	)
+	(wire
+		(pts
+			(xy 143.51 99.06) (xy 142.24 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa775c1e-af8a-4e6e-976c-9737a68f0c99")
+	)
+	(wire
+		(pts
+			(xy 127 78.74) (xy 142.24 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1068,23 +1378,63 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 78.74) (xy 143.51 88.9)
+			(xy 133.35 96.52) (xy 140.97 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b982194d-04fe-4ecb-9db1-924824e88bb5")
+		(uuid "be1e505b-33ce-4959-bf25-018a27f9be9a")
 	)
 	(wire
 		(pts
-			(xy 135.89 99.06) (xy 127 99.06)
+			(xy 140.97 82.55) (xy 133.35 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d7a11e27-ff39-416b-a107-8b96eb477e1f")
+		(uuid "c5091235-f323-4f2d-90b2-8f0adfc149ab")
+	)
+	(wire
+		(pts
+			(xy 129.54 109.22) (xy 127 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d696a137-e9c5-4e65-8c54-bb7188752ad3")
+	)
+	(wire
+		(pts
+			(xy 142.24 78.74) (xy 143.51 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df168add-10d0-441c-b615-73f8f2cb6b7f")
+	)
+	(wire
+		(pts
+			(xy 133.35 82.55) (xy 133.35 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee04659d-47d9-4dda-80c9-0041197addf5")
+	)
+	(wire
+		(pts
+			(xy 129.54 92.71) (xy 129.54 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f55eb4b6-8833-485a-b823-2a63a65c95d5")
 	)
 	(wire
 		(pts
@@ -1095,6 +1445,85 @@
 			(type default)
 		)
 		(uuid "fe4794c2-076d-4935-851e-f249fc138482")
+	)
+	(symbol
+		(lib_id "Sensor_Humidity:ENS210")
+		(at 140.97 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "093b1dd9-31be-4cf4-9280-fe6b602bb5f2")
+		(property "Reference" "U2"
+			(at 147.32 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ENS210"
+			(at 147.32 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:AMS_QFN-4-1EP_2x2mm_P0.95mm_EP0.7x1.6mm"
+			(at 140.97 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ams.com/eng/Products/Environmental-Sensors/Relative-Humidity-and-Temperature-Sensors/ENS210"
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Relative Humidity and Temperature Sensor with I2C Interface"
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f18122d4-8c98-4f33-b3f4-b0702cc15522")
+		)
+		(pin "3"
+			(uuid "b04dc9db-a881-49ed-a384-9f99a6c8638d")
+		)
+		(pin "1"
+			(uuid "44de26ca-a6ab-48b8-a1ec-cdedade5e6e8")
+		)
+		(pin "5"
+			(uuid "665ce950-12fc-419b-b376-0a3e73a9936a")
+		)
+		(pin "4"
+			(uuid "725e864f-5d4a-4792-850a-82faeedacb1d")
+		)
+		(instances
+			(project ""
+				(path "/69541317-d26f-4729-92e3-a88c7c013fad"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "MCU_Module:Arduino_Nano_ESP32")
@@ -1324,7 +1753,7 @@
 	)
 	(symbol
 		(lib_id "Sensor:AM2302")
-		(at 143.51 96.52 0)
+		(at 143.51 109.22 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1333,7 +1762,7 @@
 		(dnp no)
 		(uuid "ee254401-4397-4d06-b231-9c77edc32d4e")
 		(property "Reference" "U1"
-			(at 149.86 95.2499 0)
+			(at 149.86 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1342,7 +1771,7 @@
 			)
 		)
 		(property "Value" "AM2302"
-			(at 149.86 97.7899 0)
+			(at 149.86 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1351,7 +1780,7 @@
 			)
 		)
 		(property "Footprint" "Sensor:ASAIR_AM2302_P2.54mm_Vertical"
-			(at 143.51 106.68 0)
+			(at 143.51 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1360,7 +1789,7 @@
 			)
 		)
 		(property "Datasheet" "http://akizukidenshi.com/download/ds/aosong/AM2302.pdf"
-			(at 139.7 90.17 0)
+			(at 139.7 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1369,7 +1798,7 @@
 			)
 		)
 		(property "Description" "3.3 to 5.0V, Temperature and humidity module,  DHT22, AM2302"
-			(at 143.51 96.52 0)
+			(at 143.51 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
